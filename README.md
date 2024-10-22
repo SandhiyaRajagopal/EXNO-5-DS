@@ -178,6 +178,57 @@ plt.title('Bar graph')
 plt.show()
 ```
 ![image](https://github.com/user-attachments/assets/d1bf43c7-ffe0-4911-a5b5-7db81f93a84e)
+```
+ages=[2,5,70,40,30,45,43,44,40,60,7,13,56,19,90,77,33,23,20,40]
+range=(0,100)
+bins=15
+plt.hist(ages,bins,range,color='b',histtype='bar',rwidth=0.8)
+plt.xlabel('age')
+plt.ylabel('no.of.people')
+plt.title('Histogram')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/212d94a4-8397-474b-88b2-c7d408fe281c)
+```
+x=[2,1,6,4,2,4,8,9,4,2,4,10,6,4,5,7,7,7,2,5,8,9,0,6,8,9,3]
+plt.hist(x,bins=10,color='pink',alpha=1)
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/f6c39c48-6cad-409b-a39f-f3f3b08701ff)
+```
+np.random.seed(0)
+d=np.random.normal(loc=0,scale=1,size=100)
+d
+```
+![image](https://github.com/user-attachments/assets/7c8c44d8-bee3-438d-880d-ec9101b48ca6)
+```
+f,ax=plt.subplots()
+ax.boxplot(d)
+ax.set_xlabel('data')
+ax.set_ylabel('values')
+ax.set_title('Box plot')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/6c0757c6-545a-4864-9b1d-6a00e1021aa8)
+```
+act=['eat','sleep','work','play']
+slices=[3,7,8,6]
+colors=['yellow','red','pink','blue']
+plt.pie(slices,labels=act,colors=colors,startangle=90,shadow=True,explode=(0,0,0.1,0),autopct='%1.1f%%')
+plt.legend()
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/02546b51-64df-43f8-a5b9-97054311ff0a)
+```
+labels='Py','C++','Ruby','Java'
+sizes=[215,130,245,210]
+colors=['gold','yellowgreen','lightcoral','lightskyblue']
+explode=(0,0.4,0,0.6)
+plt.pie(sizes,explode=explode,labels=labels,colors=colors,autopct='%1.1f%%',shadow=True)
+plt.axis('equal')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/041963e3-7ed1-4e41-8b46-060b587f199d)
 
 # Result:
- Include your result here
+ Thus the above code executed successfully.
